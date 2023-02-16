@@ -1,0 +1,85 @@
+*, *::after, *::before{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img, picture, svg, video{
+    display:block;
+    max-width:100%;
+}
+:root{
+    --white:#ffffff;
+    --blue:#1876f2;
+    --hover-gray:#e4e6eb;
+    --gray:#656783;
+}
+.header{
+    background-color: bisque;
+    height:56px;
+    width:100%;
+    background-color: var(--white);
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+.head{
+    height:inherit;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0px 10px;
+    box-shadow: 1px 2px 3px;
+}
+.quick-links{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+.head form{
+    display: flex;
+    align-items: center;
+    border:none;
+    height:60%;
+    width:35%;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+}
+.head form input{
+    height:100%;
+    width:90%;
+    outline: none;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+    border: none;
+}
+.head form .icon .fa{
+    width:10%;
+    margin-left:5px;
+    color: rgb(173, 176, 175);
+}
+.head img{
+    width:50px;
+    height:40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-style: groove;
+}
+.messenger, .notification{
+    border: 1px solid black;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+
+}
+.messenger svg{
+    margin:0 auto;
+    padding-bottom: 13px;
+}
+.notification svg{
+    margin:0 auto;
+    padding-bottom: 13px;
+}
+.messenger:hover, .notification:hover{
+    background-color: rgba(159, 159, 159, 0.692);
+}

@@ -1,0 +1,59 @@
+*, *::after, *::before{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+:root{
+    --white:#ffffff;
+    --blue:#1876f2;
+    --hover-gray:#e4e6eb;
+    --gray:#656783;
+}
+img, picture, svg, video{
+    display:block;
+    max-width:100%;
+    object-fit: cover;
+}
+.left-sider-bar{
+    max-width:300px;
+}
+.left{
+    display:flex;
+    height:100%;
+    flex-direction:column;
+    gap:15px;
+    margin-top:10px;
+    margin-left:10px;
+    font-weight: 500;
+    overflow-y: auto;
+}
+.left .side-profile-icon, .icon{
+    width:24px;
+    height:24px;
+    border-radius:5px;
+}
+
+.side-profile-icon, .home-icon, .friends-icon, .page-icon, .marketplace-icon,
+ .most_recent-icon, .groups-icon,.see_all-icon, .self_taught_programmers-image,
+ .nigerians_gammers_group-image, .jet_li_group-image,
+ .see_all_groups-image, .angry_birds-icon, .candy_crush-icon,
+ .mr_young_page-image, .poker_delux-icon, .dream_leauge-icon,
+ .see_all-icon{
+    display:flex;
+    gap:10px;
+    font-size:15px;
+    cursor: pointer;
+}
+.your_groups, .your_games{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:15px;
+}
+.terms_and_condition{
+    font-size: 13px;
+    font-weight: 400;
+    text-align:left;
+    color:#65676b;
+}
