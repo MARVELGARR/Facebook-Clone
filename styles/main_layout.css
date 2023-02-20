@@ -8,8 +8,13 @@ img, picture, svg, video{
     display:block;
     max-width:100%;
 }
-.main-layout{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
+
+.main-layout .main{
+    display: grid;
+    grid-template-columns: 20vw auto 25vw;
     background-color: #f0f2f5;
+    justify-items: stretch;
+    justify-content: space-between;
+    align-items: start;
+    grid-gap:40px;   
 }

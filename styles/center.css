@@ -24,11 +24,14 @@ img, picture, svg, video{
     justify-content: space-between;
 }
 .center{
-    display:flex;
-    flex-direction: column;
-    gap:25px;
-    margin-top:30px;
+    margin-top: 30px;
+}
+.center .middle{
     max-width:500px;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .first-center-block{
@@ -64,9 +67,14 @@ img, picture, svg, video{
     height:200px;
     display: flex;
     gap:10px;
-    margin-top:20px
+    margin-top:20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding:0px 10px;
 }
-
+.stories-card::-webkit-scrollbar{
+    display:none;
+}
 .new_story-card{
     display:flex;
     flex-flow:column nowrap;
@@ -76,6 +84,7 @@ img, picture, svg, video{
     height:100%;
     border: 1px solid black;
     border-radius: 10px;
+    flex: 0 0 auto;
 }
 .card-pic-area{
     height:70%;
@@ -295,6 +304,8 @@ img, picture, svg, video{
     padding:10px;
     display:flex;
     gap:10px;
+    overflow-x: auto;
+    padding:0px 10px;
 }
 .friend_request-cards a{
     text-decoration: none;
@@ -304,6 +315,10 @@ img, picture, svg, video{
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: -1px 0px 10px 1px rgb(190 191 194 / 56%);
+    flex:0 0 auto;
+}
+.friend_request-cards::-webkit-scrollbar{
+    display:none;
 }
 
 .friend-requests .top-part{
