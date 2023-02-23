@@ -89,6 +89,24 @@ main{
     }
 }
 
-@media(max-width:907px){
-
+@media(max-width:780px){
+    main .main-layout .main{
+        grid-template-columns: 8% 90%;
+    }
+}
+@media(max-width:580px){
+    main .main-layout .main{
+        grid-template-columns: 10% 90%;
+    }
+    .center{
+        width: 80%;
+    }
+}
+@media(max-width:390px){
+    main .main-layout .main{
+        grid-template-columns: 10% 90%;
+    }
+    .center{
+        width: 80%;
+    }
 }
